@@ -1,0 +1,151 @@
+.container {
+    background-color: hsl(210, 46%, 95%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    width: 70%;
+}
+
+.quote {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    opacity: 0.5;
+}
+
+.person1 {
+    position: relative;
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 10px;
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.person2 {
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    padding: 20px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.person3 {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 20px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.person4 {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 20px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.person5 {
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 10px;
+    padding: 20px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.profile {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile img {
+    border: 1px white solid;
+    border-radius: 50%;
+    width: 2rem;
+    height: 100%;
+}
+
+.profile p {
+    margin: 0rem 0.5rem;
+    color: white;
+}
+
+.person1 h4,
+.person2 h4,
+.person5 h4 {
+    color: hsl(0, 0%, 100%);
+}
+
+.person3 h4,
+.person4 h4 {
+    color: hsl(217, 19%, 35%); 
+}
+
+.person1 p,
+.person2 p,
+.person3 p,
+.person4 p,
+.person5 p {
+    color: hsl(0, 0%, 70%);
+}
+
+span {
+    color: hsl(0, 0%, 100%);
+}
+ 
+.name {
+    color: hsl(0, 0%, 70%);
+}
+
+.white {
+    color: hsl(217, 19%, 35%);
+}
+
+.attribution {
+    position: absolute;
+    font-size: 11px;
+    bottom: 3%;
+    color: blue;
+    text-align: center;
+}
+
+
+/* syling for moblie and smaller desktop */
+@media (max-width: 500px) {
+
+    .container {
+        height: max-content;
+        padding: 1rem;
+        position: relative;
+    }
+    
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: 1rem 1rem;
+    }
+
+    .attribution {
+        font-size: 11px;
+        color: blue;
+        position: absolute;
+        top: 99%;
+
+    }
+}
+
